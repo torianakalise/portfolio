@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+	<title>Homepage</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, intial-scale=1.0">
+			<link rel="stylesheet" href="external-retail.css">
+			<script src="https://kit.fontawesome.com/4e396ce8d8.js" crossorigin="anonymous"></script>
+		<style> 
+
+		.container {
+				display: grid;
+				grid-template-columns: 1fr;
+				grid-auto-rows: minmax(100px,auto);
+				grid-gap: .1em;
+				grid-template-areas:
+					"header"
+					"cart"
+					"search"
+					"nav"
+					"heading-text"
+					"section"
+					"product1"
+					"product2"
+					"product3"
+					"product4"
+					"email"
+					"heading-text2"
+					"footer";
+			}
+			
+			header {
+				grid-area: header;
+			}
+			
+			.cart {
+				grid-area: cart;
+				display: flex;
+				align-items: flex-end;
+				justify-content: flex-end;
+				float: right;
+				padding: 0 10px;
+				background: none;
+				font-size: 17px;
+			}
+			.search {
+				grid-area: search;
+				display: flex;
+				align-items: flex-end;
+				justify-content: flex-end;
+				float: right;
+				padding: 0 10px;
+				margin-bottom: 40px;
+				background: none;
+				font-size: 20px;
+				border: none;
+				cursor: pointer;	  
+			}
+		
+			nav {
+				grid-area: nav;
+				display:flex;
+				justify-content:space-around;
+				align-items:center;
+				font-size: 18px;	
+				background-color:#bfdfe0;
+			}
+			
+			.heading-text {
+				grid-area:heading-text;
+				font-size: 22px;
+				padding: 0px;
+				background-color: #bfdfe0;
+			}
+			
+			section {
+				grid-area: section;
+				padding: 0 50px;
+				font-size: 20px;
+			}
+			.product1 {
+				grid-area: product1;
+				padding: 0 50px;
+			}
+			.product2 {
+				grid-area: product2;
+				padding: 0 50px;
+			}
+			
+			.product3 {
+				grid-area: product3;
+				padding: 0 50px;
+			}
+			.product4 {
+				grid-area: product4;
+				padding: 0 50px;
+			}
+	
+		
+			.email {
+				grid-area: email;
+				padding: 0 100px;
+				display:flex;
+        		justify-content:flex-start;
+        		align-items:flex-start;
+        		text-align:center;
+				font-size: 25px;
+				
+			}
+			
+			.heading-text2 {
+				grid-area: heading-text2;	
+				
+			}
+			
+			footer {
+				grid-area: footer;
+				align-content: center;
+				text-align: center;
+				padding: 0 50px;
+	
+			}
+			
+@media only screen and (min-width: 620px) {
+			.container {
+				display: grid;
+				grid-template-columns: repeat(12, 1fr);
+				grid-auto-rows: minmax(100px, auto);
+				grid-gap: .1em;
+				grid-template-areas: 
+				"header header header header header header cart cart cart cart cart cart"
+				"header header header header header header search search search search search search"
+				"nav nav nav nav nav nav nav nav nav nav nav nav"
+				"heading-text heading-text heading-text heading-text heading-text heading-text heading-text heading-text heading-text heading-text heading-text heading-text"
+				"section section section section section section section section section section section section"
+				"product1 product1 product1 product1 product1 product1 product2 product2 product2 product2 product2 product2"
+				"product3 product3 product3 product3 product3 product3 product4 product4 product4 product4 product4 product4"
+				"email email email email email email heading-text2 heading-text2 heading-text2 heading-text2 heading-text2 heading-text2"
+				"footer footer footer footer footer footer footer footer footer footer footer footer";
+			}	
+			}	
+				
+			.heading-text {
+				padding: 0 150px;
+				
+			}
+			footer {
+				padding: 0 150px;
+			}
+@media only screen and (min-width: 900px) {
+			.container {
+				display: grid;
+				grid-template-columns: repeat(12, 1fr);
+				grid-auto-rows: minmax(100px, auto);
+				grid-gap: .1em;
+				grid-template-areas: 
+				"header header header header header header cart cart cart cart cart cart"
+				"header header header header header header search search search search search search"
+				"nav nav nav nav nav nav nav nav nav nav nav nav"		
+				"heading-text heading-text heading-text heading-text heading-text heading-text heading-text heading-text heading-text heading-text heading-text heading-text"	
+				"section section section section section section section section section section section section"
+				"product1 product1 product1 product2 product2 product2 product3 product3 product3 product4 product4 product4"
+				"email email email email email email heading-text2 heading-text2 heading-text2 heading-text2 heading-text2 heading-text2"
+				"footer footer footer footer footer footer footer footer footer footer footer footer";
+			}	
+			}	
+			.heading-text {
+				padding: 0 150px;
+			}
+		</style>
+		
+		
+	</head>
+		<body>
+			<div class="container"> 
+				<header>
+				<img src="images/logo3.png" alt="comapny logo"><br>
+				
+				</header>
+				
+				<div class="cart">
+				<i class="fas fa-shopping-cart fa-2x"></i>	
+				</div>
+				
+				<div class="search">	
+					<div class="search-container">
+    				<form action="/action_page.php">
+					<input type="text" placeholder="Search.." name="search">
+      				<button type="submit"><i class="fa fa-search"></i></button>
+    				</form>
+  					</div>
+				</div>
+				
+				
+				<nav>
+					<a href="index.html"><div>Home</div></a>
+					<a href="product1.html"><div>Eyeshadow</div></a>
+					<a href="product2.html"><div>Brushes</div></a>
+					<a href="">	<div>Foundation</div></a>
+					<a href="">	<div>Concealer</div></a>
+					<a href="policy.html">	<div>Policy</div></a>
+				</nav>
+				
+				<div class="heading-text">
+					<h2> Our promise as a company</h2>
+					<p>As a company we promise to give or customers high quality products. We wish to insipire creativity among our followers, to creat a safe and welcoming brand that strives to include all individuals from all walks of life. We aim to insipre within this beauty industry. We as a company want to provide our customers with an experience while using our products, an experience that keeps them coming back for more.</p>
+				</div>
+				
+				<section>
+					<h3> Products Available!</h3>
+				</section>
+				
+				<div class="product1">
+					<img src="images/eyeshadow1.png" alt="eyeshadow palette">
+					<h3>Eyeshadow Palletes</h3>
+					<p>Various palette designs to fit each person's personality and needs. Each pallete provides versitle use and can be used to create a wide variety of looks!</p>
+				</div>
+				
+				<div class="product2">
+					<img src="images/brush3.png" alt="cosmetic brushes">
+					<h3>Brushes</h3>
+					<p>Picking the perfect set of brushes for your collection. Each set of brushes has different uses and purposes, finding the perfect one provides versitility in creating unified looks.</p>
+				</div>
+				
+				<div class="product3">
+					<img src="images/foundation1.png" alt="foundation bottle">
+					<h3>Foundation</h3>
+					<p>Choosing the perfect shade of foundation is a tricky task! Here we have dedicated our descriptions and swatches to provide the best online matching capabilities possible.</p>
+				</div>
+				
+				
+				<div class="product4">
+					<img src="images/concealer1.png" alt="concealer cosmetics">
+					<h3>Concealer</h3>
+					<p>Here we have the perfect partner for our foundation! Grab one of our creaseless concealers to add to your collection.</p>
+				</div>
+				
+				
+				<div class="email">
+					<h3>Join Our Mailing List!<br>
+					Get updates on new products and launches!
+					</h3>	
+				</div>
+				
+				<div class="heading-text2">
+					<img src="images/emailtemplate.png">
+				</div>
+				
+				
+				
+				<footer>
+					<h3> Connect with us further!</h3>
+					<i class="fab fa-twitter fa-3x"></i>
+					<i class="fab fa-facebook fa-3x"></i>
+					<i class="fab fa-instagram fa-3x"></i>
+					<i class="fab fa-youtube fa-3x"></i>
+				</footer>
+				
+			</div>
+		</body>
+</html>

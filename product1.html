@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+	<title>Eyeshadows</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, intial-scale=1.0">
+			<link rel="stylesheet" href="external-retail.css">
+			<script src="https://kit.fontawesome.com/4e396ce8d8.js" crossorigin="anonymous"></script>
+		<style> 
+	
+			.container {
+				display: grid;
+				grid-template-columns: 1fr;
+				grid-auto-rows: minmax(100px,auto);
+				grid-gap: .5em;
+				grid-template-areas:
+					"header"
+					"cart"
+					"search"
+					"nav"
+					"section"
+					"product1"
+					"product2"
+					"product3"
+					"product4"
+					"product5"
+					"product6"
+					"email"
+					"heading-text2"
+					"footer";
+			}
+			
+			header {
+				grid-area:header;
+			}
+			{
+				background-color:#bfdfe0;
+			}
+			.cart {
+				grid-area: cart;
+				display: flex;
+				align-items: flex-end;
+				justify-content: flex-end;
+				float: right;
+				padding: 0 10px;
+				background: none;
+				font-size: 17px;
+			}
+			.search {
+				grid-area: search;
+				display: flex;
+				align-items: flex-end;
+				justify-content: flex-end;
+				float: right;
+				padding: 0 10px;
+				margin-bottom: 40px;
+				background: none;
+				font-size: 20px;
+				border: none;
+				cursor: pointer;
+			}
+	
+			nav {
+				grid-area: nav;
+				display:flex;
+				justify-content:space-around;
+				align-items:center;
+				font-size: 18px;
+			}
+			section {
+				grid-area: section;
+				padding: 0 250px;	
+				font-size: 20px;
+				background-color: #bfdfe0;
+			}
+			.product1 {
+				grid-area: product1;
+			}
+			.product2 {
+				grid-area: product2;
+			}
+			.product3 {
+				grid-area: product3;
+			}
+			.product4 {
+				grid-column: product4;
+			}
+			.product5 {
+				grid-area: product5;
+			}
+			.product6 {
+				grid-area: product6;
+			}
+			.email {
+				grid-area: email;
+				padding: 0 100px;
+				display:flex;
+        		justify-content:flex-start;
+        		align-items:flex-start;
+        		text-align:center;
+				font-size:25px;
+			}
+			.heading-text2{
+				grid-area: heading-text2
+			}
+			footer {
+				grid-area: footer;
+				align-content: center;
+				text-align: center;
+				padding: 0 450px;
+				
+			}
+			
+@media only screen and (min-width: 620px) {
+			.container {
+				display: grid;
+				grid-template-columns: repeat(12, 1fr);
+				grid-auto-rows: minmax(100px, auto);
+				grid-gap: .5em;
+				grid-template-areas: 
+				"header header header header header header cart cart cart cart cart cart"
+				"header header header header header header search search search search search search"
+				"nav nav nav nav nav nav nav nav nav nav nav nav"
+				"section section section section section section section section section section section section"
+				"product1 product1 product1 product1 product1 product1 product2 product2 product2 product2 product2 product2"
+				"product3 product3 product3 product3 product3 product3 product4 product4 product4 product4 product4 product4"
+				"product5 product5 product5 product5 product5 product5 product6 product6 product6 product6 product6 product6"
+				"email email email email email email heading-text2 heading-text2 heading-text2 heading-text2 heading-text2 heading-text2"
+				"footer footer footer footer footer footer footer footer footer footer footer footer";
+		}	
+		}
+			section{
+				padding: 0 100px;
+			}
+			.email {
+				padding: 0 50px;
+			}
+			footer {
+				padding: 0 150px;
+			}
+@media only screen and (min-width: 900px) {
+				.container {
+				display: grid;
+				grid-template-columns: repeat(12, 1fr);
+				grid-auto-rows: minmax(100px, auto);
+				grid-gap: .5em;
+				grid-template-areas: 
+				"header header header header header header cart cart cart cart cart cart"
+				"header header header header header header search search search search search search"
+				"nav nav nav nav nav nav nav nav nav nav nav nav"
+				"section section section section section section section section section section section section"
+				"product1 product1 product1 product1 product2 product2 product2 product2 product3 product3 product3 product3"
+				"product4 product4 product4 product4 product5 product5 product5 product5 product6 product6 product6 product6"
+				"email email email email email email heading-text2 heading-text2 heading-text2 heading-text2 heading-text2 heading-text2"
+				"footer footer footer footer footer footer footer footer footer footer footer footer";
+			}	
+			}
+		</style>
+		
+			
+	
+		
+	</head>
+		<body>
+		<div class="container"> 
+			<header>
+				<img src="images/logo3.png" alt="comapny logo"><br>	
+			</header>
+			
+			<div class="search">
+					<div class="search-container">
+    				<form action="/action_page.php">
+					<input type="text" placeholder="Search.." name="search">
+      				<button type="submit"><i class="fa fa-search"></i></button>
+    				</form>
+  					</div>
+			</div>
+			
+			<div class="cart">
+				<i class="fas fa-shopping-cart fa-2x"></i>
+			</div>
+				
+			<nav>
+				<a href="index.html"><div>Home</div></a>
+				<a href="product1.html"><div>Eyeshadow</div></a>
+				<a href="product2.html"><div>Brushes</div></a>
+				<a href="">	<div>Foundation</div></a>
+				<a href="">	<div>Concealer</div></a>
+				<a href="policy.html">	<div>Policy</div></a>
+			</nav>
+				
+			<section>
+				<h2>Shop Our Palettes!</h2>
+				<P>The goal of our brand is to bring our customers fun and exciting products, that not only are of quaility but are also affordable for our customers. We strive to cater to all demographics of beauty and love to see the various ways our products are used!</P>
+			</section>
+			
+			<div class="product1">
+				<img src="images/eyeshadow1.png" alt="eyeshadow palette">
+				<h3>Sunset   $25</h3>
+				<p>This palette is full of matte and shimmer shades that range from golden and warm tones. This is the perfect palette to work with for everyday use.</p>
+				<i class="fas fa-cart-plus fa-2x"></i>
+			</div>
+			
+			<div class="product2">
+				<img src="images/eyeshadow2.png" alt="eyeshadow palette">
+				<h3>Rainbow   $25</h3>
+				<p>This colorful combination of colors is a great palette for individuals looking to start their journey into creating colorful looks. This palette can be your one stop shop for all of those color combinations.</p>
+				<i class="fas fa-cart-plus fa-2x"></i>
+			</div>
+			
+			<div class="product3">
+				<img src="images/eyeshadow3.png" alt="eyeshadow palette">
+				<h3>Basics   $29</h3>
+				<p>This is the palette everyone should have in their collection. With this you can create perfect everyday simple looks or you can turn those looks into dramatic going out looks.</p>
+				<i class="fas fa-cart-plus fa-2x"></i>
+			</div>
+			
+			<div class="product4">
+				<img src="images/eyeshadow7.png" alt="eyeshadow palette">
+				<h3>Smoke   $20</h3>
+				<p>Holy neutrals! Our smoke palette featuring various neutral shades to create various types of looks, natural to very smokey looks!</p>
+				<i class="fas fa-cart-plus fa-2x"></i>
+			</div>
+			
+			<div class="product5">
+				<img src="images/eyeshadow5.png" alt="eyeshadow palette">
+				<h3>Soft Serve   $25</h3>
+				<p>The cute pastel colors of this palette give you the opportunity to play with color but maybe on a less extreme scale, give the mor soft but still glam and colorful approach to color. </p>
+				<i class="fas fa-cart-plus fa-2x"></i>
+			</div>
+			
+			<div class="product6">
+				<img src="images/eyeshadow6.png" alt="eyeshadow palette">
+				<h3>Fire     $25</h3>
+				<p>Grab a tall glass of water for all the pigment in this palette! This palette featuring various shades of red, oranges, and pinks is every warm tone lovers dream. With this palette you can create such dramatic and catching looks with the pigments!</p>
+				<i class="fas fa-cart-plus fa-2x"></i>
+			</div>
+			
+			<div class="email">
+				<h3>Join Our Mailing List!<br>
+				Get updates on new products and launches!</h3>	
+			</div>
+			
+			
+			<div class="heading-text2">
+				<img src="images/emailtemplate.png" alt="email submission template">
+			</div>
+			
+			
+			<footer>
+				<h3> Connect with us further!</h3>
+				<i class="fab fa-twitter fa-3x"></i>
+				<i class="fab fa-facebook fa-3x"></i>
+				<i class="fab fa-instagram fa-3x"></i>
+				<i class="fab fa-youtube fa-3x"></i>
+			</footer>
+		</div>
+		</body>
+	
+</html>

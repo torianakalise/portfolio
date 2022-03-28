@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+	<title>Brushes</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, intial-scale=1.0">
+			<link rel="stylesheet" href="external-retail.css">
+			<script src="https://kit.fontawesome.com/4e396ce8d8.js" crossorigin="anonymous"></script>
+		<style> 
+			.container {
+				display: grid;
+				grid-template-columns: 1fr;
+				grid-auto-rows: minmax(100px,auto);
+				grid-gap: .5em;
+				grid-template-areas:
+					"header"
+					"cart"
+					"search"
+					"nav"
+					"section"
+					"product1"
+					"product2"
+					"product3"
+					"product4"
+					"product5"
+					"product6"
+					"email"
+					"heading-text2"
+					"footer";
+			}
+			
+			h2{
+				border-bottom: solid 2px;
+				text-align: center;
+			}
+			header {
+				grid-area:header;
+			}
+			.cart {
+				grid-area: cart;
+				display: flex;
+				align-items: flex-end;
+				justify-content: flex-end;
+				float: right;
+				padding: 0 10px;
+				background: none;
+				font-size: 17px;
+			}
+			.search {
+				grid-area: search;
+				display: flex;
+				align-items: flex-end;
+				justify-content: flex-end;
+				float: right;
+				padding: 0 10px;
+				margin-bottom: 40px;
+				background: none;
+				font-size: 20px;
+				border: none;
+				cursor: pointer;
+			}
+		
+			nav {
+				grid-area: nav;
+				display:flex;
+				justify-content:space-around;
+				align-items:center;
+				font-size: 18;
+			}
+			section {
+				grid-area: section;
+				padding: 0 250px;
+				font-size: 20px;
+				background-color: #bfdfe0;
+			}
+	
+			.product1 {
+				grid-area: product1;
+			}
+			.product2 {
+				grid-area: product2;
+			}
+			.product3 {
+				grid-area: product3;
+			}
+			.product4 {
+				grid-column: product4;
+			}
+			.product5 {
+				grid-area: product5;
+			}
+			.product6 {
+				grid-area: product6;
+			}
+			.email {
+				grid-area: email;
+				padding: 0 100px;
+				display:flex;
+        		justify-content:flex-start;
+        		align-items:flex-start;
+        		text-align:center;
+				font-size: 25px;
+			}
+			.heading-text2{
+				grid-area: heading-text2;		
+			}
+			footer {
+				grid-area: footer;
+				align-content: center;
+				text-align: center;
+				padding: 0 450px;
+			}
+			
+@media only screen and (min-width: 620px) {
+			.container {
+				display: grid;
+				grid-template-columns: repeat(12, 1fr);
+				grid-auto-rows: minmax(100px, auto);
+				grid-gap: .5em;
+				grid-template-areas: 
+				"header header header header header header cart cart cart cart cart cart"
+				"header header header header header header search search search search search search"
+				"nav nav nav nav nav nav nav nav nav nav nav nav"
+				"section section section section section section section section section section section section"
+				"product1 product1 product1 product1 product1 product1 product2 product2 product2 product2 product2 product2"
+				"product3 product3 product3 product3 product3 product3 product4 product4 product4 product4 product4 product4"
+				"product5 product5 product5 product5 product5 product5 product6 product6 product6 product6 product6 product6"
+				"email email email email email email heading-text2 heading-text2 heading-text2 heading-text2 heading-text2 heading-text2"
+				"footer footer footer footer footer footer footer footer footer footer footer footer";
+	}
+	}	
+			section {
+				padding: 0 100px;
+				
+			}
+			.email {
+				padding: 0 50px;
+			}
+			footer {
+				padding: 0 150px;
+			}
+			
+@media only screen and (min-width: 900px) {
+				.container {
+				display: grid;
+				grid-template-columns: repeat(12, 1fr);
+				grid-auto-rows: minmax(100px, auto);
+				grid-gap:.5em;
+				padding: 0;
+				grid-template-areas: 
+				"header header header header header header cart cart cart cart cart cart"
+				"header header header header header header search search search search search search"
+				"nav nav nav nav nav nav nav nav nav nav nav nav"
+				"section section section section section section section section section section section section"
+				"product1 product1 product1 product1 product2 product2 product2 product2 product3 product3 product3 product3"
+				"product4 product4 product4 product4 product5 product5 product5 product5 product6 product6 product6 product6"
+				"email email email email email email heading-text2 heading-text2 heading-text2 heading-text2 heading-text2 heading-text2"
+				"footer footer footer footer footer footer footer footer footer footer footer footer";
+			}		
+			}	
+		</style>
+		
+		
+	</head>
+		<body>
+			<div class="container"> 
+			<header>
+				<img src="images/logo3.png" alt="brand logo"><br>	 	
+			</header>
+				
+			<div class="search">
+					<div class="search-container">
+    				<form action="/action_page.php">
+					<input type="text" placeholder="Search.." name="search">
+      				<button type="submit"><i class="fa fa-search"></i></button>
+    				</form>
+  					</div>
+			</div>
+				
+			<div class="cart">
+				<i class="fas fa-shopping-cart fa-2x"></i>
+			</div>
+				
+			<nav>
+				<a href="index.html"><div>Home</div></a>
+				<a href="product1.html"><div>Eyeshadow</div></a>
+				<a href="product2.html"><div>Brushes</div></a>
+				<a href="">	<div>Foundation</div></a>
+				<a href="">	<div>Concealer</div></a>
+				<a href="policy.html">	<div>Policy</div></a>
+			</nav>
+				
+			<section>
+				<h2>Shop Our Brushes!</h2>
+				<p>Welcome to our brush collection! Here you will find the perfect set of brushes that will suit your needs perfectly, shop our various sets to finish off any brush collection or to start any colletion! Don't know what you're looking for all sets come with descriptions of brush uses and best ways to care for them!</p>
+			</section>
+			
+			<div class="product1">
+				<img src="images/brush1.png" alt="set of cosmetic brushes">
+				<h3>NO'1 $20</h3>
+				<p>Collection one is dedicated to the individual who is looking for their first set of brushes. This set includes four face and four eye brushes, the perfect amount to start off a brush kit or the perfect set to add a couple extras to an existing collection.</p>
+				<i class="fas fa-cart-plus fa-2x"></i>
+			</div>
+				
+			<div class="product2">
+				<img src="images/brush2.png" alt="set of cosmetic brushes">
+				<h3>NO'2 $15</h3>
+				<p>Collection two is a mini set designed for the individual who is always on the go, and desires to have that mini touch up kit with them at all times. This four piece set includes two face, a lip, and an eye brush to complete the set. </p>
+				<i class="fas fa-cart-plus fa-2x"></i>	
+			</div>
+				
+			<div class="product3">
+				<img src="images/brush3.png" alt="set of cosmetic brushes">
+				<h3>NO'3 $35</h3>
+				<p>Collection three is a face brush collection. With this collection you can achieve an flawless face with the five included brushes.</p>
+				<i class="fas fa-cart-plus fa-2x"></i>
+			</div>
+				
+			<div class="product4">
+				<img src="images/brushes9.png" alt="set of cosmetic brushes">
+				<h3>NO'4 $25</h3>
+				<p>Collection number four is dedicated to getting a perfect blended eye look. This tweleve piece set is designed to give you the best eyeshadow look possible.</p>
+				<i class="fas fa-cart-plus fa-2x"></i>
+			</div>
+				
+			<div class="product5">
+				<img src="images/brush10.png" alt="set of cosmetic brushes" class="drop-shadow">
+				<h3>NO'5 $55</h3>
+				<p>Collection number six is our largest colllection of brushes. This is a collection of thirty-two brushes, this collection is composed of various face and eye brushes that complete the set.</p>
+				<i class="fas fa-cart-plus fa-2x"></i>
+			</div>
+				
+			<div class="product6">
+				<img src="images/brushes8.png" alt="beauty sponge tool" class="drop-shadow">
+				<h3>NO'6 $8</h3>
+				<p>Tool number 6 is not a brush but our take on the infamous beauty blender. Ours with the ability to be used dry for powdwers, or wet or foundations; it is a great tool to get that flawless base layer.</p>
+				<i class="fas fa-cart-plus fa-2x"></i>
+			</div>
+				
+			<div class="email">
+				<h3>Join Our Mailing List!<br>
+				Get updates on new products and launches!	
+				</h3>
+			</div>
+				
+			<div class="heading-text2">
+				<img src="images/emailtemplate.png" alt="email submission template">
+			</div>
+				
+			<footer>
+				<h3> Connect with us further!</h3>
+				<i class="fab fa-twitter fa-3x"></i>
+				<i class="fab fa-facebook fa-3x"></i>
+				<i class="fab fa-instagram fa-3x"></i>
+				<i class="fab fa-youtube fa-3x"></i>
+			</footer>
+		
+		</div>
+			
+			
+	
+		</body>
+</html>
